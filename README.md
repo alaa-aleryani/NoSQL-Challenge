@@ -1,1 +1,1 @@
-# NoSQL-Challenge
+# NoSQL Challenge
