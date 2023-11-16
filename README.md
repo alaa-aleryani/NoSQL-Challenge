@@ -3,10 +3,11 @@ In this challenge, I've been contracted by the editors of a food magazine, `Eat 
 As, the UK Food Standards Agency evaluates various establishments across the United Kingdom, and gives them a food hygiene rating.
 
 **Part 1** and **Part 2** are done in `NoSQL_setup.ipynb`.
-## Part 1: Database and Jupyter Notebook Set Up
-## Part 2: Update the Database
+### Part 1: Database and Jupyter Notebook Set Up
+Used MongoDB.
+### Part 2: Update the Database
 
-Add 
+We were asked to add, this new restaurant: 
 ```
     {
         "BusinessName":"Penang Flavours",
@@ -37,6 +38,5 @@ Add
         "NewRatingPending":True
     }
 ```
-# -------------------------------------------------------------------------------------
 **Part 3** is done in `NoSQL_analysis.ipynb`
-## Part 3: Exploratory Analysis
+### Part 3: Exploratory Analysis
