@@ -73,8 +73,8 @@ Before you can perform any queries or analysis, the magazine editors have some r
 * `RatingValue` refers to the overall rating decided by the Food Authority and ranges from 1-5. The higher the value, the better the rating.
 
     **Note:** This field also includes non-numeric values such as 'Pass', where 'Pass' means that the establishment <br /> 
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; passed their  inspection but isn't given a number rating. We will coerce non-numeric values to nulls <br />
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; during the database setup before converting ratings to integers.
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; passed their  inspection but isn't given a number rating. We will coerce non-numeric values to nulls <br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; during the database setup before converting ratings to integers.
 
 * The scores for Hygiene, Structural, and ConfidenceInManagement work in reverse. This means, the higher the value, the worse the establishment is in these areas.
 ---
