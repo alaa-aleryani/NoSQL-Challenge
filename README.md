@@ -1,16 +1,16 @@
 # NoSQL Challenge
-The UK Food Standards Agency evaluates various establishments across the United Kingdom, and gives them a food hygiene rating. <\br>
-
+The UK Food Standards Agency evaluates various establishments across the United Kingdom, and gives them a food hygiene rating. <br />
 In this challenge, suppose I've been contracted by the editors of a food magazine, `Eat Safe, Love`, to evaluate some of the ratings data in order to help their journalists and food critics decide where to focus future articles.
 
 This challenge is divided into 3 parts:
-- Part 1: Database and Jupyter Notebook Set Up
-- Part 2: Updating the Database
-- Part 3: Exploratory Analysis
-Where **Part 1** and **Part 2** are done in `NoSQL_setup.ipynb`;
+- **Part 1:** Database and Jupyter Notebook Set Up
+- **Part 2:** Updating the Database
+- **Part 3:** Exploratory Analysis
+
+Where **Part 1** and **Part 2** are done in `NoSQL_setup.ipynb`; <br />
 And **Part 3** is done in `NoSQL_analysis.ipynb`.
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-### `Part 1: Database and Jupyter Notebook Set Up`
+## `Part 1: Database and Jupyter Notebook Set Up`
 Connected to MongoDB, then:
 1. Imported the data provided in the establishments.json file from our Terminal. Named the database `uk_food` and the collection `establishments`. 
 2. Within the notebook, imported the libraries we need: **PyMongo** and **Pretty Print (pprint)**.
@@ -21,7 +21,7 @@ Connected to MongoDB, then:
     - - Find and display one document in the establishments collection using find_one and display with pprint.
 5. Assigned the establishments collection to a variable to prepare the collection for use.
 
-### `Part 2: Update the Database`
+## `Part 2: Update the Database`
 Before you can perform any queries or analysis, the magazine editors have some requested modifications for the database:
 1. An exciting new halal restaurant just opened in Greenwich, but hasn't been rated yet. The magazine has asked us to include it in our analysis. Add the following information to the database:
 
@@ -62,7 +62,7 @@ Before you can perform any queries or analysis, the magazine editors have some r
     - - Used update_many to convert `latitude` and `longitude` to decimal numbers.
     - - Use update_many to convert `RatingValue` to integer numbers.
 
-### `Part 3: Exploratory Analysis`
+## `Part 3: Exploratory Analysis`
 Eat Safe, Love has specific questions they want you to answer, which will help them find the locations they wish to visit and avoid. :thinking: 
 
 ---
@@ -78,9 +78,9 @@ Eat Safe, Love has specific questions they want you to answer, which will help t
 Used the following questions to explore the database, and find the answers, so we can provide them to the magazine editors.
 
 1. Which establishments have a hygiene score equal to 20?
-2. Which establishments in London have a RatingValue greater than or equal to 4?
+2. Which establishments in London have a RatingValue greater than or equal to 4? <br />
     **Hint:** The London Local Authority has a longer name than "London" so we used `$regex` as part of the search.
-3. What are the top 5 establishments with a RatingValue of 5, sorted by lowest hygiene score (&uarr;), nearest to the new restaurant added, "Penang Flavours"?
+3. What are the top 5 establishments with a RatingValue of 5, sorted by lowest hygiene score (&uarr;), nearest to the new restaurant added, "Penang Flavours"? <br />
     **Hint:** We compared the `geocode` to find the nearest locations. Search within `0.01` degree on either side of the `latitude` and `longitude.`
-4. How many establishments in each Local Authority area have a hygiene score of 0? Sort the results from highest to lowest (&darr;), and print out the top ten local authority areas.
+4. How many establishments in each Local Authority area have a hygiene score of 0? Sort the results from highest to lowest (&darr;), and print out the top ten local authority areas. <br />
     **Hint:** We had to use the aggregation method to answer this.
