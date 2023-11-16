@@ -5,10 +5,13 @@ In this challenge, suppose I've been contracted by the editors of a food magazin
 This challenge is divided into 3 parts:
 - **Part 1:** Database and Jupyter Notebook Set Up
 - **Part 2:** Updating the Database
-- **Part 3:** Exploratory Analysis <br />
+- **Part 3:** Exploratory Analysis 
+
 Where **Part 1** and **Part 2** are done in `NoSQL_setup.ipynb`; <br />
-And **Part 3** is done in `NoSQL_analysis.ipynb`.
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+And **Part 3** is done in `NoSQL_analysis.ipynb`. 
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 ## `Part 1: Database and Jupyter Notebook Set Up`
 Connected to MongoDB, then:
 1. Imported the data provided in the establishments.json file from our Terminal. Named the database `uk_food` and the collection `establishments`. 
@@ -62,7 +65,7 @@ Before you can perform any queries or analysis, the magazine editors have some r
     * Use update_many to convert `RatingValue` to integer numbers.
 
 ## `Part 3: Exploratory Analysis`
-`_Eat Safe, Love_` has specific questions they want you to answer, which will help them find the locations they wish to visit and avoid. :thinking: 
+`__Eat Safe, Love__` has specific questions they want you to answer, which will help them find the locations they wish to visit and avoid. :thinking: 
 
 ---
 **Some notes to be aware of while you are exploring the dataset:**
@@ -70,8 +73,8 @@ Before you can perform any queries or analysis, the magazine editors have some r
 * `RatingValue` refers to the overall rating decided by the Food Authority and ranges from 1-5. The higher the value, the better the rating.
 
     **Note:** This field also includes non-numeric values such as 'Pass', where 'Pass' means that the establishment <br /> 
-    &nbsp;&nbsp;&nbsp;&nbsp; passed their  inspection but isn't given a number rating. We will coerce non-numeric <br />
-    &nbsp;&nbsp;&nbsp;&nbsp; values to nulls during the database setup before converting ratings to integers.
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; passed their  inspection but isn't given a number rating. We will coerce non-numeric values<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; to nulls during the database setup before converting ratings to integers.
 
 * The scores for Hygiene, Structural, and ConfidenceInManagement work in reverse. This means, the higher the value, the worse the establishment is in these areas.
 ---
